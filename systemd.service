@@ -5,7 +5,7 @@ Description=users service
 User=app
 Environment=REDIS_PORT=REDIS_ENDPOINT
 Environment=AUTH_API_PORT=8080
-ExecStart=/bin/java -jar /root/users/target/users.jar
+ExecStart=/bin/java -jar /root/todo-shell/users/target/users.jar
 SyslogIdentifier=users
 
 [Install]
