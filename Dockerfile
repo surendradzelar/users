@@ -1,7 +1,7 @@
 FROM      openjdk:8 as BUILD
 RUN       mkdir -p /app/src
 WORKDIR   /app
-COPY      src .
+COPY      src src
 COPY      pom.xml .
 RUN       mvn package
 
